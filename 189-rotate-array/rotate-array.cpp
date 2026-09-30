@@ -2,9 +2,7 @@ class Solution {
 public:
     void reverse(vector<int>& arr2, int  left, int n) {
         while(left < n){
-          int temp=arr2[left];
-          arr2[left] = arr2[n];
-          arr2[n] = temp;
+          swap(arr2[left],arr2[n]);
           left++;
           n--;
         }
