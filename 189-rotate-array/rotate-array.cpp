@@ -1,10 +1,10 @@
 class Solution {
 public:
-    void reverse(vector<int>& arr2, int  left, int n) {
-        while(left < n){
-          swap(arr2[left],arr2[n]);
-          left++;
-          n--;
+    void reverse(vector<int>& arr2, int  i, int j) {
+        while(i < j){
+          swap(arr2[i],arr2[j]);
+          i++;
+          j--;
         }
     }
     void rotate(vector<int>& arr, int k) {
